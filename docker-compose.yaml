@@ -86,7 +86,7 @@ services:
       - ./frontend/.env.local:/app/.env.local:ro
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_BACKEND_URL=https://test.developerpa.online/api
+      - NEXT_PUBLIC_BACKEND_URL=https://suna.universidadisep.com/api
     command: ["npm", "run", "start"]
     depends_on:
       - backend
