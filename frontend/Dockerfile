@@ -25,6 +25,8 @@ RUN npm install
 COPY . .
 
 ENV NEXT_PUBLIC_VERCEL_ENV production
+RUN echo "URL: $NEXT_PUBLIC_SUPABASE_URL"
+RUN echo "KEY: $NEXT_PUBLIC_SUPABASE_ANON_KEY"
 
 RUN npm run build
 
