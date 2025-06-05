@@ -86,10 +86,9 @@ services:
     #  - ./frontend/.env.local:/app/.env.local:ro
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_BACKEND_URL=https://suna.universidadisep.com/api
-      - NEXT_PUBLIC_SUPABASE_URL=https://prndnensxpuqoaixklkx.supabase.co
-      - NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBybmRuZW5zeHB1cW9haXhrbGt4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkwOTE0OTEsImV4cCI6MjA2NDY2NzQ5MX0.bv95T9DsahDOKBxBpSRV12GzVrcQe3IWdI8qREj4-L0
-    command: ["npm", "run", "start"]
+      - NEXT_PUBLIC_BACKEND_URL=
+      - NEXT_PUBLIC_SUPABASE_URL=
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=
     depends_on:
       - backend
 
