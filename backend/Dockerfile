@@ -23,6 +23,8 @@ RUN useradd -m -u 1000 appuser && \
 COPY --chown=appuser:appuser requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt gunicorn
 
+RUN python -c "import langfuse"
+
 # Switch to non-root user
 USER appuser
 
