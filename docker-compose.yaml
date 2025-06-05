@@ -82,8 +82,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    volumes:
-      - ./frontend/.env.local:/app/.env.local:ro
+    #volumes:
+    #  - ./frontend/.env.local:/app/.env.local:ro
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_BACKEND_URL=https://suna.universidadisep.com/api
